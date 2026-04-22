@@ -1,3 +1,4 @@
+EXTRA_CFLAGS += -Wno-error
 obj-m += monitor.o
 
 all:
