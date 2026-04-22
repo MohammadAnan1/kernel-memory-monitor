@@ -116,7 +116,7 @@ static int __init monitor_init(void) {
 
 /* Exit */
 static void __exit monitor_exit(void) {
-    del_timer_sync(&monitor_timer);
+  //del_timer_sync(&monitor_timer);
     unregister_chrdev(major, DEVICE_NAME);
     printk(KERN_INFO "Memory Monitor Unloaded\n");
 }
